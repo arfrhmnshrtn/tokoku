@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-login .container{
+    margin: 0 100px;
+    display: flex;
+    justify-content: center;
+}
+.content-login .container form{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding: 50px;
+}
+.content-login .container form .logo{
+    font-size: 5rem;
+    text-align: center;
+    color: salmon;
+}
+.content-login .container form .text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+.container .container form .email-field, .password-field{
+    position: relative;
+    border-bottom: 2px solid salmon;
+    margin-bottom: 20px;
+}
+.container .container form .email-field input, .password-field input{
+    outline: none;
+    border: none;
+    padding: 10px 50px;
+    width: 400px;
+    font-size: 1rem;
+}
+.content-login .container form .email-field .awesome i, .password-field .awesome i{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    font-size: 1.5rem;
+    color: salmon;
+}
+.content-login .container form .password-field .eye i{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+.email-field label, .password-field label{
+    position: absolute;
+    left: 50px;
+    top: 20%;
+    pointer-events: none;
+    transition: .5s;
+    color: rgba(0, 0, 0, .5);
+}
+.email-field input:focus ~ label, .password-field input:focus ~ label ,
+.email-field input:valid ~ label, .password-field input:valid ~ label{
+    top: -10px;
+    color: salmon;
+}
+.forget{
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.forget:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    padding: 10px;
+    background-color: salmon;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.option{
+    margin-top: 50px;
+}
+.option p{
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+.option .box{
+    display: flex;
+    justify-content: space-around;
+}
+.option .box div{
+    border: 1px solid black;
+    /* padding: 10px 20px; */
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.or{
+    transition: .5s;
+}
+.or:hover{
+    background-color: transparent;
+    color: #000;
+}
+.google{
+    background-color: #DB4437;
+}
+.facebook-icon{
+    background-color: #3b5998;
+}
+.or a{
+    color: #fff;
+    font-size: 1rem;
+}
+.or:hover a{
+    color: #000;
+}
+.header-kedua.sticky + .content-login{
+    padding-top: 110px;
+}
