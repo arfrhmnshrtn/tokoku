@@ -63,7 +63,7 @@ btnTop.addEventListener('click', function() {
     document.documentElement.scrollTop = 0;
 });
 
-
-
+let loc = location.href;
+console.log(loc);
 
 
